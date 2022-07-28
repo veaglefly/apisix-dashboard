@@ -53,7 +53,7 @@ const GlobalHeaderRight: React.FC = () => {
 
   return (
     <Space className={className}>
-      <a href="https://apisix.apache.org/docs/apisix/getting-started" target="_blank">
+      <a href="#" target="_blank">
         <Tooltip title="Documentation">
           <span className={styles.action}>
             <QuestionCircleOutlined />

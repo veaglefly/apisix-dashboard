@@ -56,7 +56,6 @@ export const convertToFormData = (originData: UpstreamComponent.ResponseData) =>
     data.upstream_type = 'node';
   }
   // nodes have two types
-  // https://github.com/apache/apisix-dashboard/issues/2080
   if (data.nodes instanceof Array) {
     data['submitNodes'] = data.nodes;
   } else if (data.nodes) {
@@ -131,7 +130,6 @@ export const convertToRequestData = (
      * submitNodes will be [] or node list
      * when upstream_id === none, None === undefined
      */
-    // NOTE: https://github.com/ant-design/ant-design/issues/27396
     data.nodes = {};
     submitNodes?.forEach((item) => {
       const port = item.port ? `:${item.port}` : '';

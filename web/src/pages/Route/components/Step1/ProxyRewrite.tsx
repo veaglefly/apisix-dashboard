@@ -36,7 +36,6 @@ const removeBtnStyle = {
 };
 
 /**
- * https://apisix.apache.org/docs/apisix/plugins/proxy-rewrite
  * UI for ProxyRewrite plugin
  */
 const ProxyRewrite: React.FC<RouteModule.Step1PassProps> = ({ form, disabled }) => {

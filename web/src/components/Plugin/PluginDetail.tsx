@@ -199,7 +199,7 @@ const PluginDetail: React.FC<Props> = ({
         schemas: [
           {
             // useless placeholder
-            uri: `https://apisix.apache.org/`,
+            uri: `#`,
             fileMatch: ['*'],
             schema,
           },
@@ -447,9 +447,9 @@ const PluginDetail: React.FC<Props> = ({
             icon={<LinkOutlined />}
             onClick={() => {
               if (name.startsWith('serverless')) {
-                window.open('https://apisix.apache.org/docs/apisix/plugins/serverless');
+                window.open('#');
               } else {
-                window.open(`https://apisix.apache.org/docs/apisix/plugins/${name}`);
+                window.open(`#`);
               }
             }}
             key={3}

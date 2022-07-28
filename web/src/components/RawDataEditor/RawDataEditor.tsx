@@ -204,7 +204,7 @@ const RawDataEditor: React.FC<Props> = ({
               type="default"
               icon={<LinkOutlined />}
               onClick={() => {
-                window.open(`https://apisix.apache.org/docs/apisix/admin-api#${type}`);
+                window.open(`#`);
               }}
               key={'document'}
             >

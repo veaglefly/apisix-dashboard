@@ -25,7 +25,7 @@ export default () => (
       {
         key: 'GitHub',
         title: <GithubOutlined />,
-        href: 'https://github.com/apache/apisix',
+        href: '#',
         blankTarget: true,
       },
     ]}

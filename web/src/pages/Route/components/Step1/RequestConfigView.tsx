@@ -51,7 +51,6 @@ const RequestConfigView: React.FC<RouteModule.Step1PassProps> = ({ form, disable
                       validateTrigger={['onChange', 'onBlur']}
                       rules={[
                         {
-                          // NOTE: https://github.com/apache/apisix/blob/master/apisix/schema_def.lua#L40
                           pattern: new RegExp(/^\*?[0-9a-zA-Z-._]+$/, 'g'),
                           message: formatMessage({
                             id: 'page.route.form.itemRulesPatternMessage.domain',

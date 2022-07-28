@@ -102,7 +102,6 @@ Cypress.Commands.add('configurePlugin', ({ name, cases }) => {
       .invoke('text')
       .then((text) => {
         if (text === 'Form') {
-          // FIXME: https://github.com/cypress-io/cypress/issues/7306
           cy.wait(1000);
           cy.get(domSelector.monacoMode).should('be.visible');
           cy.get(domSelector.monacoMode).click();
